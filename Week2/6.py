@@ -1,5 +1,5 @@
 text = "hello world"
-textlines = ['Hello World\n', 'How is It Going?\n', "maybe\n"]
+textlines = ['Hello World1 23576\n', 'How is It Going?\n', "maybe!!! I wouldn't\n"]
 filename = "helloworld.txt"
 
 with open(filename, 'w+') as f:
