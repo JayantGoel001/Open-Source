@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+
 d = {
     1: {
         "id": 1,
@@ -11,7 +12,7 @@ d = {
         "name": "JAVA",
         "location": ["NOIDA", "Mumbai", "Chennai", "GZB"],
         "department": "MATHS",
-        "profit": 49300.00
+        "profit": 99300.00
     }, 3: {
         "id": 3,
         "name": "C++",
@@ -28,7 +29,7 @@ d = {
         "id": 5,
         "name": "Archade",
         "location": ["Chennai", "Delhi"],
-        "department": "Mechanics",
+        "department": "Software",
         "profit": 3500.00
     }
 }
@@ -40,7 +41,7 @@ for uid, details in d.items():
     if details["profit"] > maxProfit:
         maxProfitDetails = details
         maxProfit = details["profit"]
-
+print("project having maximum profit")
 print(maxProfitDetails)
 
 # 2
@@ -51,6 +52,7 @@ for uid, details in d.items():
         maxLoc = len(details["location"])
         maxLocationDetails = details
 
+print("Project Running at maximum location")
 print(maxLocationDetails)
 
 # 3
@@ -60,9 +62,10 @@ for uid, details in d.items():
         department[details["department"]] = 0
 
     department[details["department"]] += 1
-
+print("Dapartment")
 print(department)
 
+print("Department having minimum Project")
 minPro = 9999999999999
 minDepartment = ""
 for key, value in department.items():
@@ -73,9 +76,10 @@ for key, value in department.items():
 print(minDepartment)
 
 # 4
+print("Question 4")
 for uid, details in d.items():
     print(uid, "--->")
-    print("Project Name:", details['project'].upper())
+    print("Project Name:", details['name'].upper())
     print("Location:")
     for loc in details['location']:
         print(loc[0].upper() + loc[1:])
@@ -94,4 +98,6 @@ for uid, details in d.items():
         print(details)
 
 # 6
-plt.bar(department.keys(),department.values())
+
+plt.bar(department.keys(), department.values())
+plt.show()

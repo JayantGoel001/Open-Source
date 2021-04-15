@@ -40,11 +40,14 @@ def matrixOperations(A, B):
 
     # 4
     if A.shape[1] == B.shape[0]:
-        print(np.dot(A, B))
+        mul = np.dot(A, B)
     else:
         print("Operation cannot be performed")
 
     # 5
+    print("Multiplication")
+    if mul is not None:
+        print(mul)
 
 
 n1, m1 = map(int, input().split())
@@ -52,5 +55,13 @@ n2, m2 = map(int, input().split())
 
 A = np.zeros(shape=(n1, m1))
 B = np.zeros(shape=(n2, m2))
+
+for i in range(n1):
+    for j in range(m1):
+        A[i][j] = int(input())
+
+for i in range(n2):
+    for j in range(m2):
+        B[i][j] = int(input())
 
 matrixOperations(A, B)
