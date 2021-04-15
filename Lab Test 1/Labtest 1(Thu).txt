@@ -1,0 +1,26 @@
+Labtest   1 (20 Marks)
+Duration: 50 Mins
+Thu 
+
+
+1.  Write a function that takes as input two matrices A and B of integers and perform the following operations:[ use numpy ]
+	a) Check if the matrix A's upper triangular elements are even  if not then convert it to even numbers.  (3 Marks)
+	b) Check if the matrix B 's diagonal elements are armstrong numbers( An Armstrong number is an n-digit number that is equal to the sum 
+                       of the nth powers of its digits)
+                 if yes then replace them with the difference of the number with the minimum of all the elements in the matrix.  (3 marks)        
+        c) Display the updated matrices A and B. ( 2 Marks)
+	d) Multiply updated matrix A and B. (if they cannot be multiplied print the statement "Operation cannot be performed") (2 Marks)
+	e) Print       of the resultant matrix of step (d). (3 Marks)
+	
+2.  Write a program to store the information about five projects using dictionary and write code to support following functionality.
+Project id: unique
+Project name: name of the project
+Location: - multiple value field ( Delhi, Ahmedabad,...)
+Department- alphanumeric
+Profit: float
+(i).	Find out the details about the project having maximum profit.
+(ii).	Figure out the project running at maximum locations.
+(iii).	Find out the count of projects according to department and list the department having minimum number of projects. 
+(iv).	Print the project name in uppercase and for location name, the first letter of each word should be in uppercase.
+(v).	Find the average profit among all the projects and list out all the projects where profit is less than the average profit.
+(vi).	Also depict (iii) using bar graph.
