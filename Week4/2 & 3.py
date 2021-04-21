@@ -15,6 +15,13 @@ plt.ylim(-1.0, 1.0)
 
 plt.xticks(np.linspace(-4, 4, 9, endpoint=True))
 plt.yticks(np.linspace(-1, 1, 5, endpoint=True))
+plt.savefig("Image.png", dpi=72)
 plt.show()
 
-plt.savefig("Image.png", dpi=72)
+
+# 3
+
+plt.plot(X, C, color="blue", linewidth=2.5, linestyle="-", label="cosine")
+plt.plot(X, S, color="green", linewidth=2.5, linestyle="-", label="sine")
+plt.legend()
+plt.show()
