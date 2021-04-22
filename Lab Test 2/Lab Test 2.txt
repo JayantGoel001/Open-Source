@@ -1,0 +1,15 @@
+Labtest 2
+-------------
+Max Marks: 20
+Max Time: 50 Mins
+
+
+Load Wine dataset from the sklearn.datasets and perform the following operations:
+i) Display the number of features this dataset. 
+ii) Display how many categorical and numerical features are there in the dataset
+iii) Print How many classes are present in this dataset? 
+iv) Pre-process the data and replace the missing value in each feature with its mean.
+v) Perform KNN, Naive-Bayes for three times with different test and train split of the data. 
+   Compute the mean accuracy of each of the classification method and plot a bar chart for showing the same.
+ 
+
