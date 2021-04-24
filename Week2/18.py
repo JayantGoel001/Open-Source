@@ -1,27 +1,27 @@
-def nearly_equal(str1, str2):
-    count = 0
-    i = j = 0
-    while i < len(str1) and j < len(str2):
-        if str1[i] != str2[j]:
-            count = count + 1
-            if len(str1) > len(str2):
-                i = i + 1
-            elif len(str1) == len(str2):
-                pass
-            else:
-                i = i - 1
-        if count > 1:
-            return False
+def mutate(d):
+    ret = [d]
+    i = 0
+    l = len(d)
+    alp = map(chr, range(97, 123))
+
+    while i < l:
+        cop = d
+        ret.append(cop[:i] + cop[i + 1:])
+        if i < l - 2:
+            ret.append(cop[:i] + cop[i + 1] + cop[i] + cop[i + 2:])
+        elif i < l - 1:
+            ret.append(cop[:i] + cop[i + 1] + cop[i])
+        for x in alp:
+            ret.append(cop[:i] + x + cop[i + 1:])
+
+    for x in alp:
+        ret.append(d + x)
+        ret.append(x + d)
+        ret.append(cop[:i] + x + cop[i:])
         i = i + 1
-        j = j + 1
-    if count < 2:
-        return True
+
+    return ret
 
 
-str1 = input("Enter first string::\n")
-str2 = input("Enter second string::\n")
-boolean = nearly_equal(str1, str2)
-if boolean:
-    print("Strings are nearly equal.")
-else:
-    print("Strings are not equal.")
+print('hefllo' in mutate('hello'))
+print('hllo' in mutate('hello'))
