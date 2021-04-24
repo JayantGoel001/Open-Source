@@ -1,1 +1,1 @@
- 
+print("Same as 13")
